@@ -1,0 +1,121 @@
+.home {
+    width:100%;
+    height: 100vh;
+    padding: 2px;
+}
+.navigations {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-left: 20px;
+}
+.homeWrapper {
+    border: 1px solid rgb(201, 200, 237);
+    padding: 20px;
+}
+.firstSection {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.charts {
+  align-items: center;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgb(174, 184, 227);
+    transition: 0.3s;
+    width:100%;
+    padding: 5px;
+    height: 120px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgb(174, 184, 227);
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .moreDetails {
+    height: 75px;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+  .details p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .secondSection {
+    display: flex;
+    gap:20px;
+    margin-top: -5px;
+  }
+  .secondSection .card {
+    height: 205px;
+    border-radius: 10px;
+    border:1px solid rgb(98, 125, 232);
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100px;
+  }
+  table th {
+    padding: 1px;
+    background-color:rgb(98, 125, 232) ;
+  }
+  td, th {
+    border: 1px solid rgb(98, 125, 232);
+    text-align: left;
+    padding: 2px;
+    line-height: 1;
+  }
+  .card-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-footer .content {
+    color: brown;
+  }
+  .icon {
+    transform: rotate(45deg)
+  }
+ 
+  @media screen 
+    and (max-device-width: 640px) {
+      .firstSection {
+        display: block;
+        align-items: center;
+        gap:20px;
+    }
+    .secondSection {
+      display: block;
+      gap:20px;
+    }
+}
+
+@media screen and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
+      .firstSection {
+        display: grid;
+      grid-template-columns: auto auto;
+    }
+    .secondSection {
+      display: grid;
+      grid-template-columns: auto auto;
+      overflow: auto;
+    }
+    .moreDetails {
+      margin-top: -33px;
+    }
+}

@@ -1,0 +1,8 @@
+
+.landing {
+  display: flex;
+  width: 100%;
+}
+.landingContainer {
+  flex: 6;
+}

@@ -24,7 +24,7 @@ function Home() {
               <div className='details'>
                 <span><b>Employee Turnover Rate</b></span>
                 <h3><b>25%</b></h3>
-                <p>Resignation in last 90 days: 0</p>
+                <p className='card1Data'>Resignation in last 90 days: 0</p>
               </div>
               <div className='charts'>
                 <Barchart datas={setDatas} color={firstColor} />

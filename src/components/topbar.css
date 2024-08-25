@@ -61,10 +61,6 @@ position: relative;
   color: white;
 }
 
-.help {
-  color:white;
-}
-
 
 .items{
  display: flex;
@@ -92,3 +88,17 @@ align-items: end;
     display: none;
   }
 }
+
+ /* Styles for 14-inch screens */
+ @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .items .userDetails {
+    font-size: 9px;
+  }
+ }
+ 
+ /* Styles for 22-inch screens */
+ @media only screen and (min-width: 1440px) {
+  .items .userDetails {
+    font-size: 14px;
+  }
+ }

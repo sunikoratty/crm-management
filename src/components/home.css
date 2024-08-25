@@ -1,6 +1,6 @@
 .home {
     width:100%;
-    height: 100vh;
+    height: 100%;
     padding: 2px;
 }
 .navigations {
@@ -108,7 +108,7 @@
     and (max-device-width: 1024px) {
       .firstSection {
         display: grid;
-      grid-template-columns: auto auto;
+       grid-template-columns: auto auto;
     }
     .secondSection {
       display: grid;
@@ -118,4 +118,11 @@
     .moreDetails {
       margin-top: -33px;
     }
+}
+
+ /* Styles for 22-inch screens */
+ @media only screen and (min-width: 1440px) {
+  .card1Data {
+    font-size: 14px;
+  }
 }

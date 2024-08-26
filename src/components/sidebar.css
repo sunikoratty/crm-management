@@ -50,39 +50,50 @@
     padding: 10px !important;
 }
 
-@media (max-width: 768px) {
-     
-    .sidebar {
-      display: none;
-    }
-  }
 
-  /* Styles for 14-inch screens */
-  /* @media only screen and (min-width: 1024px) and (max-width: 1440px) {
-   .sidebar {
-    flex: none;
-    width: 21%;
-   }
-  } */
-  
-  /* Styles for 22-inch screens */
-  /* @media only screen and (min-width: 1440px) {
+  /* Extra Small Devices (Portrait Phones, Less than 576px) */
+@media (max-width: 575.98px) {
     .sidebar {
-        flex: none;
-        width: 15%;
-       }
-  } */
-  @media only screen and (min-width: 1024px) {
+        display: none;
+      }
+}
+
+/* Small Devices (Landscape Phones, 576px and Up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
     .sidebar {
-      flex: none;       
-      width: 220px;
-      line-height: 1.65;
-    }
-  } 
-  @media only screen and (min-width: 1440px) {
+        flex: none;       
+        width: 220px;
+      }
+}
+
+/* Medium Devices (Tablets, 768px and Up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
     .sidebar {
-      flex: none;
-      width: 220px;
-      line-height: 1.15;
-    }
-  }
+        flex: none;       
+        width: 220px;
+      }
+}
+
+/* Large Devices (Desktops, 992px and Up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .sidebar {
+        flex: none;       
+        width: 220px;
+      }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and Up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .sidebar {
+        flex: none;       
+        width: 220px;
+      }
+}
+
+/* Extra Extra Large Devices (Very Large Desktops, 1400px and Up) */
+@media (min-width: 1400px) {
+    .sidebar {
+        flex: none;       
+        width: 220px;
+      }
+}

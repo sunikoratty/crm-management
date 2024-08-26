@@ -53,7 +53,7 @@
     margin-top: -5px;
   }
   .secondSection .card {
-    height: 205px;
+    height: 220px;
     border-radius: 10px;
     border:1px solid rgb(98, 125, 232);
     margin-top: 20px;
@@ -63,6 +63,7 @@
   .title {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
   }
   table {
     border-collapse: collapse;
@@ -91,38 +92,81 @@
     transform: rotate(45deg)
   }
  
-  @media screen 
-    and (max-device-width: 640px) {
-      .firstSection {
-        display: block;
-        align-items: center;
-        gap:20px;
-    }
-    .secondSection {
+  /* Extra Small Devices (Portrait Phones, Less than 576px) */
+  @media (max-width: 575.98px) {
+    .firstSection {
       display: block;
+      align-items: center;
       gap:20px;
-    }
-}
-
-@media screen and (min-device-width: 768px) 
-    and (max-device-width: 1024px) {
-      .firstSection {
-        display: grid;
-       grid-template-columns: auto auto;
-    }
-    .secondSection {
-      display: grid;
-      grid-template-columns: auto auto;
-      overflow: auto;
-    }
-    .moreDetails {
-      margin-top: -33px;
-    }
-}
-
- /* Styles for 22-inch screens */
- @media only screen and (min-width: 1440px) {
-  .card1Data {
-    font-size: 14px;
   }
+  .secondSection {
+    display: block;
+    gap:20px;
+  }
+}
+
+/* Small Devices (Landscape Phones, 576px and Up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .firstSection {
+    display: block;
+    align-items: center;
+    gap:20px;
+}
+.secondSection {
+  display: block;
+  gap:20px;
+}
+}
+
+/* Medium Devices (Tablets, 768px and Up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card{
+    height: 160px;
+  }
+  .moreDetails  {
+    margin-top: -40px;
+  }
+  .secondSection .card {
+    height: 190px;
+  }
+  table tr td {
+    font-size: 11px; 
+   }
+}
+
+/* Large Devices (Desktops, 992px and Up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card{
+    height: 160px;
+  }
+  .moreDetails  {
+    margin-top: -40px;
+  }
+  .secondSection .card {
+    height: 190px;
+  }
+  table tr td {
+    font-size: 11px; 
+   }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and Up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .card{
+    height: 130px;
+  }
+  .moreDetails  {
+    margin-top: -40px;
+  }
+  .secondSection .card {
+    height: 190px;
+  }
+  table tr td {
+    font-size: 11px; 
+   }
+}
+
+/* Extra Extra Large Devices (Very Large Desktops, 1400px and Up) */
+@media (min-width: 1400px) {
+   
 }

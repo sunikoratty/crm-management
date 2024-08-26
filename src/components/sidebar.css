@@ -58,17 +58,31 @@
   }
 
   /* Styles for 14-inch screens */
-  @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* @media only screen and (min-width: 1024px) and (max-width: 1440px) {
    .sidebar {
     flex: none;
     width: 21%;
    }
-  }
+  } */
   
   /* Styles for 22-inch screens */
-  @media only screen and (min-width: 1440px) {
+  /* @media only screen and (min-width: 1440px) {
     .sidebar {
         flex: none;
         width: 15%;
        }
+  } */
+  @media only screen and (min-width: 1024px) {
+    .sidebar {
+      flex: none;       
+      width: 220px;
+      line-height: 1.65;
+    }
+  } 
+  @media only screen and (min-width: 1440px) {
+    .sidebar {
+      flex: none;
+      width: 220px;
+      line-height: 1.15;
+    }
   }
